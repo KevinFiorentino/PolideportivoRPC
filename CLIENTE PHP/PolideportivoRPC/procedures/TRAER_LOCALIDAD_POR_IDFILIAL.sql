@@ -1,0 +1,18 @@
+USE dbodbc;
+DELIMITER $$
+DROP PROCEDURE IF EXISTS TRAER_LOCALIDAD_POR_IDFILIAL $$
+CREATE PROCEDURE TRAER_LOCALIDAD_POR_IDFILIAL(
+	_idFilial INT
+ )
+
+BEGIN
+SELECT localidad FROM Localidad
+JOIN Filial ON Filial.idLocalidad = Localidad.idLocalidad
+
+WHERE Filial.idFilial = _idFilial;
+
+END
+$$ 
+DELIMITER ;
+
+CALL TRAER_LOCALIDAD_POR_IDFILIAL (1);
