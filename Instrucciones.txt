@@ -1,6 +1,0 @@
-1- Copiar el contenido de cliente PHP en direccion HTDOCS
-2- Importar el servidor java (esta hecho en netbeans)
-3- Agregar al proyecto las librerias externas en caso de ser necesario
-4- La base de datos es dbodbc (la misma del TP1). En la parte de datasource del servidor, esta configurado para que la conexion ODBC se llame DBodbc
-
-Para ejecutar: Poner a correr RPCServer.java desde el ide java, y despues ingresar a la pagina index.php desde el navegador
